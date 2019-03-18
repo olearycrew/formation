@@ -1,0 +1,32 @@
+{
+    "window.zoomLevel": 0,
+    "team.showWelcomeMessage": false,
+    "jshint.enable": false,
+    "workbench.colorTheme": "City Lights",
+    "csharp.suppressDotnetInstallWarning": true,
+    "explorer.confirmDelete": false,
+    "gitlens.keymap": "none",
+    "files.defaultLanguage": "markdown",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.startupEditor": "newUntitledFile",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "git.enableSmartCommit": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}
