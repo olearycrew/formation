@@ -154,6 +154,14 @@ if brew list | grep -Fq brew-cask; then
 	print_success "Homebrew-Cask uninstalled!"
 fi
 
+if [[ ! $(brew cask list | grep java) ]]; then
+	echo_install "Installing java"
+	brew cask install java
+	print_in_green "${bold} installed!${normal}\n"
+else
+	print_success_muted "Java already installed.  Skipped"
+fi
+
 ###############################################################################
 # INSTALL: brews
 ###############################################################################
