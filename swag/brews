@@ -1,5 +1,6 @@
-asciinema
 git
+bat
+coreutils
 tig
 mas
 wget
@@ -7,3 +8,19 @@ hub
 hugo
 yarn
 rbenv
+docker-machine
+git-lfs
+maven
+jq
+gradle
+heroku
+heroku-node
+kops
+kubernetes-cli
+kuberenetes-helm
+lab
+go
+zsh
+zsh-completions
+openssl
+postgresql@9.6
