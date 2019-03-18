@@ -92,18 +92,6 @@ if [ ! -d "$HOME/repos/" ]; then
 fi
 
 # -----------------------------------------------------------------------------
-# Bash-it
-# -----------------------------------------------------------------------------
-#if [ -d "$HOME/.bash_it" ]; then
-#	print_success_muted "Bash-it already installed. Skipping."
-#else
-#	step "Installing Bash-it…"
-#	git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-#	~/.bash_it/install.sh --silent --no-modify-config
-#	print_success "Bash-it installed!"
-#fi
-
-# -----------------------------------------------------------------------------
 # NVM
 # -----------------------------------------------------------------------------
 if [ -x nvm ]; then
