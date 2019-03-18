@@ -16,10 +16,7 @@ gradle
 kops
 kubernetes-cli
 kubernetes-helm
-lab
 go
-zsh
-zsh-completions
 openssl
 postgresql@9.6
 pg
