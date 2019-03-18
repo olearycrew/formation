@@ -24,3 +24,11 @@ zsh
 zsh-completions
 openssl
 postgresql@9.6
+pg
+redis
+libiconv
+icu4c
+pkg-config
+cmake
+gnupg
+gnupg2
