@@ -1,3 +1,6 @@
+# Fork
+This is a fork of https://github.com/minamarkham/formation where I combined items from my much less mature https://gitlab.com/brendan/next-mac
+
 # 🐝 Formation <a href="https://www.patreon.com/minamarkham"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="100"></a>
 
 ![Let's get in formation](assets/formation.gif)
