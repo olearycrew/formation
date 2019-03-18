@@ -15,7 +15,7 @@ jq
 gradle
 kops
 kubernetes-cli
-kuberenetes-helm
+kubernetes-helm
 lab
 go
 zsh
