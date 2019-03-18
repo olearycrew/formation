@@ -88,9 +88,13 @@ if [ ! -d "$HOME/.bin/" ]; then
 fi
 
 ###############################################################################
-# INSTALL: Directories
+# INSTALL: Directories & Mac Preferences
 ###############################################################################
-chapter "Creating directory structure"
+chapter "Creating directory structure and preferences"
+step "Mac preferences"
+defaults write com.apple.finder ShowHardDrivesOnDesktop -boolean TRUE; killall Finder
+
+step "Repos directory"
 if [ ! -d "$HOME/repos/" ]; then
 	mkdir "$HOME/repos"
 fi
