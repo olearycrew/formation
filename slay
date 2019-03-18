@@ -87,8 +87,36 @@ if [ ! -d "$HOME/.bin/" ]; then
 	mkdir "$HOME/.bin"
 fi
 
+###############################################################################
+# INSTALL: Directories
+###############################################################################
+chapter "Creating directory structure"
 if [ ! -d "$HOME/repos/" ]; then
-	mkdir "$HOME/repos
+	mkdir "$HOME/repos"
+fi
+
+if [ ! -d "$HOME/repos/personal" ]; then
+	mkdir "$HOME/repos/personal"
+fi
+
+if [ ! -d "$HOME/repos/liscio" ]; then
+	mkdir "$HOME/repos/liscio"
+fi
+
+if [ ! -d "$HOME/repos/gitlab" ]; then
+	mkdir "$HOME/repos/gitlab"
+fi
+
+if [ ! -d "$HOME/repos/gl-web" ]; then
+	mkdir "$HOME/repos/gl-web"
+fi
+
+if [ ! -d "$HOME/repos/demos" ]; then
+	mkdir "$HOME/repos/demos"
+fi
+
+if [ ! -d "$HOME/repos/go" ]; then
+	mkdir "$HOME/repos/go"
 fi
 
 # -----------------------------------------------------------------------------
