@@ -90,13 +90,23 @@ fi
 # -----------------------------------------------------------------------------
 # Bash-it
 # -----------------------------------------------------------------------------
-if [ -d "$HOME/.bash_it" ]; then
-	print_success_muted "Bash-it already installed. Skipping."
+#if [ -d "$HOME/.bash_it" ]; then
+#	print_success_muted "Bash-it already installed. Skipping."
+#else
+#	step "Installing Bash-it…"
+#	git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+#	~/.bash_it/install.sh --silent --no-modify-config
+#	print_success "Bash-it installed!"
+#fi
+
+# -----------------------------------------------------------------------------
+# Oh My Zsh
+# -----------------------------------------------------------------------------
+if [ ! -d "$HOME/.oh-my-zsh " ]; then
+    step "Installing Oh My ZSH…"
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 else
-	step "Installing Bash-it…"
-	git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-	~/.bash_it/install.sh --silent --no-modify-config
-	print_success "Bash-it installed!"
+	print_success_muted "Oh My Zsh already installed. Skipping."
 fi
 
 # -----------------------------------------------------------------------------
