@@ -13,8 +13,6 @@ git-lfs
 maven
 jq
 gradle
-heroku
-heroku-node
 kops
 kubernetes-cli
 kuberenetes-helm
