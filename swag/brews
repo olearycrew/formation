@@ -25,4 +25,4 @@ icu4c
 pkg-config
 cmake
 gnupg
-gnupg2
+heroku

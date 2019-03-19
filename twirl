@@ -555,12 +555,12 @@ install_brews() {
 }
 
 tap_cask() {
-    if [[ ! $(brew cask list | grep $cask) ]]; then
-        echo_install "Installing $cask"
-        brew cask install $cask --appdir=/Applications >/dev/null
-        print_in_green "${bold}✓ installed!${normal}\n"
+    if [[ ! $(brew tap | grep $tap) ]]; then
+        echo_install "Tapping $tap"
+        brew tap $tap >/dev/null
+        print_in_green "${bold}✓ tapped!${normal}\n"
     else
-    	print_success_muted "$cask already installed. Skipped."
+    	print_success_muted "$tap already tapped. Skipped."
     fi
 }
 
