@@ -524,8 +524,6 @@ ssh_key_setup() {
 
     if ! [[ -f $pub ]]; then
         create_ssh_key
-    else
-        github_key_check
     fi
 }
 

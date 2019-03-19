@@ -88,11 +88,33 @@ if [ ! -d "$HOME/.bin/" ]; then
 fi
 
 ###############################################################################
+# INSTALL: oh-my-zsh & dotfiles
+###############################################################################
+chapter "oh-my-zsh"
+if [ -d "$DOTFILES_ROOT" ]; then
+	step "Linking dotfiles"
+	symlink_dotfiles
+	print_success "Dotfiles linked"
+else
+	print_error "No ~/.dotfiles folder"
+	exit 1;
+fi
+
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+	step "Installing oh-my-zsh"
+	export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	print_success "oh-my-zsh installed!"
+else
+	print_success_muted "oh-my-zsh already installed."
+fi
+
+###############################################################################
 # INSTALL: Directories & Mac Preferences
 ###############################################################################
 chapter "Creating directory structure and preferences"
 step "Mac preferences"
 defaults write com.apple.finder ShowHardDrivesOnDesktop -boolean TRUE; killall Finder
+print_success "Preferences updated!"
 
 step "Repos directory"
 if [ ! -d "$HOME/repos/" ]; then
