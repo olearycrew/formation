@@ -3,7 +3,7 @@
 Download the dotfiles:
 
 ```sh
-git@gitlab.com:brendan/dotfiles.git ~/.dotfiles
+git clone git@gitlab.com:brendan/dotfiles.git ~/.dotfiles
 ```
 
 Download the script:

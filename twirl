@@ -416,7 +416,7 @@ symlink_dotfiles() {
 
   for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
   do
-    dst="$HOME/.$(basename "${src%.*}")"
+    dst="$HOME/$(basename "${src%.*}")"
     _link_file "$src" "$dst"
   done
 }
@@ -554,6 +554,16 @@ install_brews() {
     fi
 }
 
+tap_cask() {
+    if [[ ! $(brew cask list | grep $cask) ]]; then
+        echo_install "Installing $cask"
+        brew cask install $cask --appdir=/Applications >/dev/null
+        print_in_green "${bold}✓ installed!${normal}\n"
+    else
+    	print_success_muted "$cask already installed. Skipped."
+    fi
+}
+
 install_application_via_brew() {
     if [[ ! $(brew cask list | grep $cask) ]]; then
         echo_install "Installing $cask"
@@ -639,6 +649,13 @@ label_green() {
 e_lemon_ated() {
     printf "
   ${bold}Congrats! You're in formation!${normal} 🍋
+
+  ${boldy}Need to open these apps manually${normal} 
+  🚀 Rocket
+  🕶️  Spectacle
+  🍹 Bartender
+  ⏰ Clocker
+  ☕ Coffee
 
   ╭────────────────────────────────────────────────────╮
   │ Thanks for using Formation!                        │
