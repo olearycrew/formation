@@ -101,47 +101,10 @@ else
 	exit 1;
 fi
 
-###############################################################################
-# INSTALL: Directories & Mac Preferences
-###############################################################################
-chapter "Creating directory structure and preferences"
-step "Mac preferences"
-defaults write com.apple.finder AppleShowAllFiles YES
-defaults write com.apple.finder ShowHardDrivesOnDesktop -boolean TRUE; killall Finder
-print_success "Preferences updated!"
-
-step "Repos directory"
-if [ ! -d "$HOME/repos/" ]; then
-	mkdir "$HOME/repos"
-fi
-
-if [ ! -d "$HOME/repos/personal" ]; then
-	mkdir "$HOME/repos/personal"
-fi
-
-if [ ! -d "$HOME/repos/liscio" ]; then
-	mkdir "$HOME/repos/liscio"
-fi
-
-if [ ! -d "$HOME/repos/gitlab" ]; then
-	mkdir "$HOME/repos/gitlab"
-fi
-
-if [ ! -d "$HOME/repos/gl-web" ]; then
-	mkdir "$HOME/repos/gl-web"
-fi
-
-if [ ! -d "$HOME/repos/demos" ]; then
-	mkdir "$HOME/repos/demos"
-fi
-
-if [ ! -d "$HOME/repos/go" ]; then
-	mkdir "$HOME/repos/go"
-fi
-
 # -----------------------------------------------------------------------------
 # NVM
 # -----------------------------------------------------------------------------
+step "NVM"
 if [ -x nvm ]; then
 	step "Installing NVM…"
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -159,6 +122,7 @@ fi
 # -----------------------------------------------------------------------------
 # Homebrew
 # -----------------------------------------------------------------------------
+step "Homebrew"
 if ! [ -x "$(command -v brew)" ]; then
 	step "Installing Homebrew…"
 	curl -fsS 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
@@ -270,11 +234,7 @@ fi
 ###############################################################################
 chapter "Adding hot sauce…"
 if [ -f "$HOME/.hot-sauce" ]; then
-	if ask "Do you want to add hot sauce?" Y; then
-		. "$HOME/.hot-sauce"; printf "\n  You got hot sauce in your bag. 🔥 ${bold}Swag.${normal}\n";
-	else
-		print_success_muted "Hot sauce declined. Skipped.";
-	fi
+	. "$HOME/.hot-sauce"; printf "\n  You got hot sauce in your bag. 🔥 ${bold}Swag.${normal}\n";
 else
 	print_warning "No ~/.hot-sauce found. Skipping."
 fi
