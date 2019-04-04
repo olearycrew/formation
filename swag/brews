@@ -18,6 +18,7 @@ kubernetes-cli
 kubernetes-helm
 go
 openssl
+postgresql
 postgresql@9.6
 redis
 libiconv
@@ -26,7 +27,6 @@ pkg-config
 cmake
 gnupg
 heroku
-python3
 diff-so-fancy
 zaquestion/tap/lab
 knqyf263/pet/pet
