@@ -28,6 +28,5 @@ cmake
 gnupg
 heroku
 diff-so-fancy
-zaquestion/tap/lab
-knqyf263/pet/pet
 jid
+terraform

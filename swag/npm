@@ -14,3 +14,5 @@ artillery::artillery
 prettier::prettier
 thann/pingg::pingg
 express-generator::express
+now::now
+foundation-cli::foundation
