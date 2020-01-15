@@ -30,3 +30,4 @@ heroku
 diff-so-fancy
 jid
 terraform
+elastic/tap/filebeat-oss
