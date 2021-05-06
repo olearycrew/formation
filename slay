@@ -125,7 +125,8 @@ fi
 step "Homebrew"
 if ! [ -x "$(command -v brew)" ]; then
 	step "Installing Homebrew…"
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	#curl -fsS 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	export PATH="/usr/local/bin:$PATH"
 	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/brendan/.zprofile
         eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -143,6 +144,10 @@ fi
 #if [[ ! $(brew cask list | grep java) ]]; then
 #	echo_install "Installing java"
 #	brew cask install java
+# TODO: Java
+#if [[ ! $(brew cask list | grep java) ]]; then
+#	echo_install "Installing java"
+#	brew install --cask java
 #	print_in_green "${bold} installed!${normal}\n"
 #else
 #	print_success_muted "Java already installed.  Skipped"
