@@ -1,5 +1,5 @@
 heroku/brew
-caskroom/fonts
+homebrew/cask-fonts
 homebrew/services
 elastic/tap
 buildpack/tap
