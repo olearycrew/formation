@@ -13,7 +13,7 @@
 # @raycast.packageName CleanShot X
 
 # Documentation:
-# @raycast.author CleanShot X 
+# @raycast.author CleanShot X
 # @raycast.authorURL https://twitter.com/CleanShot_app
 # @raycast.description Take a screenshot of a specific area on your screen.
 
