@@ -9,7 +9,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon ./images/obsidian.png
+# @raycast.icon ../images/obsidian.png
 # @raycast.argument1 { "type": "text", "placeholder": "Type to search in vault..." }
 # @raycast.packageName Obsidian
 

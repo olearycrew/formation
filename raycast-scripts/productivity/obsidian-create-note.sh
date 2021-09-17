@@ -9,7 +9,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon ./images/obsidian.png
+# @raycast.icon ../images/obsidian.png
 # @raycast.argument1 { "type": "text", "placeholder": "Name", "optional": false, "percentEncoded": true}
 # @raycast.argument2 { "type": "text", "placeholder": "Content", "optional": true, "percentEncoded": true}
 # @raycast.packageName Obsidian
