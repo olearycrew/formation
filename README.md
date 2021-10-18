@@ -1,22 +1,25 @@
 ## Install
 
-Download the dotfiles:
-
+1. Install `git` and create a `~/repos/personal` folder
+2. Download the dotfiles:
 ```sh
 git clone git@gitlab.com:brendan/dotfiles.git ~/.dotfiles
 ```
 
-Download the script:
-
+3. Download the script:
 ```sh
 git clone git@gitlab.com:brendan/formation.git && cd formation
 ```
 
-Slay:
-
+4. Slay:
 ```sh
 sh slay 2>&1 | tee ~/slay.log
 ```
+
+4. Install fonts by unzipping `Fonts.zip`, opening `Font Book` and dragging and dropping those fonts into Font Book
+
+## More info
+
 Just follow the prompts and you’ll be fine. 👌
 
 :warning: Warning: I advise against running [this script](slay) unless you understand what it’s doing to your computer.
