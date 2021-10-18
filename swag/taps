@@ -3,5 +3,4 @@ homebrew/cask-fonts
 homebrew/services
 elastic/tap
 buildpack/tap
-wtfutil/wtfutil
 aws/tap
