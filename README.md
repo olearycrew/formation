@@ -9,7 +9,7 @@ git clone git@gitlab.com:brendan/dotfiles.git ~/.dotfiles
 Download the script:
 
 ```sh
-git clone git@gitlab.com/brendan/formation.git && cd formation
+git clone git@gitlab.com:brendan/formation.git && cd formation
 ```
 
 Slay:
