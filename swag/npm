@@ -2,7 +2,6 @@ colortest::colortest
 eslint::eslint
 gatsby-cli::gatsby
 gulp-cli::gulp
-npmusic::npmusic
 parrotsay::parrotsay
 terminalizer::terminalizer
 vue-cli::vue

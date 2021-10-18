@@ -1,22 +1,13 @@
 ## Install
 
-1. Install `git` and create a `~/repos/personal` folder
-2. Download the dotfiles:
-```sh
-git clone git@gitlab.com:brendan/dotfiles.git ~/.dotfiles
-```
-
-3. Download the script:
-```sh
-git clone git@gitlab.com:brendan/formation.git && cd formation
-```
-
-4. Slay:
-```sh
-sh slay 2>&1 | tee ~/slay.log
-```
-
-4. Install fonts by unzipping `Fonts.zip`, opening `Font Book` and dragging and dropping those fonts into Font Book
+1. Install 1Password, authenticate to GitLab
+1. Create a new SSH key with `ssh-keygen -t ed25519 -C "boleary@gitlab.com"`
+1. Put SSH key in GitLab
+1. Install `git`, create a `~/repos/personal` folder
+1. Download the dotfiles: ```git clone git@gitlab.com:brendan/dotfiles.git ~/.dotfiles```
+1. Download the script: ```git clone git@gitlab.com:brendan/formation.git && cd formation```
+1. Slay: ```sh slay 2>&1 | tee ~/slay.log```
+1. Install fonts by unzipping `Fonts.zip`, opening `Font Book` and dragging and dropping those fonts into Font Book
 
 ## More info
 
