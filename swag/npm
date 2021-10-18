@@ -3,16 +3,13 @@ eslint::eslint
 gatsby-cli::gatsby
 gulp-cli::gulp
 parrotsay::parrotsay
-terminalizer::terminalizer
 vue-cli::vue
 yo::yo
-wtfjs::wtfjs
 tldr::tldf
 fx::fx
 artillery::artillery
 prettier::prettier
 thann/pingg::pingg
 express-generator::express
-now::now
 foundation-cli::foundation
 do-not-disturb-cli::do-not-disturb

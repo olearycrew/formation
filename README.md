@@ -1,5 +1,6 @@
 ## Install
 
+1. Log into the App Store
 1. Install 1Password, authenticate to GitLab
 1. Create a new SSH key with `ssh-keygen -t ed25519 -C "boleary@gitlab.com"`
 1. Put SSH key in GitLab
@@ -8,6 +9,7 @@
 1. Download the script: ```git clone git@gitlab.com:brendan/formation.git && cd formation```
 1. Slay: ```sh slay 2>&1 | tee ~/slay.log```
 1. Install fonts by unzipping `Fonts.zip`, opening `Font Book` and dragging and dropping those fonts into Font Book
+1. 
 
 ## More info
 
