@@ -9,7 +9,7 @@
 1. Download the script: ```git clone git@gitlab.com:brendan/formation.git && cd formation```
 1. Slay: ```sh slay 2>&1 | tee ~/slay.log```
 1. Install fonts by unzipping `Fonts.zip`, opening `Font Book` and dragging and dropping those fonts into Font Book
-1. 
+1. Follow steps from [Obsidian](obsidian://open?vault=notes&file=10%20-%2019%20Personal%2F13%20Apps%20I%20use%2F13.01%20On%20Laptop%2FNext%20Mac%20Setup%20Instructions)
 
 ## More info
 
