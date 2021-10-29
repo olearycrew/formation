@@ -14,5 +14,5 @@
 # @raycast.authorURL https://twitter.com/olearycrew
 
 echo "Backing up Obsidian vault"
-/Users/brendan/.local/bin/obsidian_sync.sh
+/Users/brendan/.dotfiles/obsidian_sync.sh
 echo "Vault backed up"
