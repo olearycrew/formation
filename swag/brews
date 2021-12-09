@@ -19,7 +19,6 @@ kubernetes-helm
 go
 openssl
 postgresql
-postgresql@9.6
 redis
 libiconv
 icu4c
