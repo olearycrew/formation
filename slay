@@ -189,6 +189,14 @@ brew update
 #	    install_application_via_brew $cask
 #	done
 #fi
+# TODO: Casks
+# if [ -e $cwd/swag/casks ]; then
+# 	chapter "Installing apps via Homebrew…"
+
+# 	for cask in $(<$cwd/swag/casks); do
+# 	    install_application_via_brew $cask
+# 	done
+# fi
 
 ###############################################################################
 # INSTALL: Mac App Store Apps
